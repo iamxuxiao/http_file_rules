@@ -1,3 +1,3 @@
 #include <stdio.h>
 
-void hello_func(void);
+void hello_func_2(void);
