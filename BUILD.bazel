@@ -1,3 +1,12 @@
-#include <stdio.h>
+package(default_visibility = ["//visibility:public"])
 
-void hello_func(void);
+load("@xpilot_build_tools//:globals.bzl", "global_definitions")
+
+global_definitions()
+
+filegroup(
+    name = "hello_hpp",
+    srcs = [
+        "hello.hpp",
+    ],
+)
